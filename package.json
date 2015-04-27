@@ -1,0 +1,38 @@
+{
+  "name": "angular-template",
+  "version": "1.0.0",
+  "description": "template of angular project ",
+  "scripts": {
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "protractor": "protractor protractor.conf.js",
+    "bower": "bower",
+    "gulp": "gulp"
+  },
+  "author": "redfit",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "coffee-script": "^1.9.2",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-plumber": "^1.0.0",
+    "gulp-protractor": "^1.0.0",
+    "gulp-ruby-sass": "^1.0.1",
+    "gulp-selenium": "0.0.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-webserver": "^0.9.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-coverage": "^0.3.1",
+    "karma-jasmine": "^0.3.5",
+    "karma-osx-reporter": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "phantomjs": "^1.9.16",
+    "protractor": "^2.0.0",
+    "protractor-coffee-preprocessor": "0.0.1"
+  }
+}

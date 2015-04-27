@@ -1,0 +1,13 @@
+{
+  "name": "angular-template",
+  "version": "0.0.0",
+  "authors": [
+    "d.fuchiwaki <d.fuchiwaki@everyleaf.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.3.x",
+    "angular-route": "1.3.x",
+    "angular-mocks": "~1.3.x"
+  }
+}
