@@ -33,7 +33,7 @@ gulp.task 'sass', ->
 
 gulp.task 'karma', (done) ->
   karma.start
-      configFile: __dirname + '/karma.conf.js'
+      configFile: __dirname + '/karma.conf.coffee'
       singleRun: true
     , done
 
