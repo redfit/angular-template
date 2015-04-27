@@ -44,7 +44,7 @@ gulp.task 'coverage', ->
 gulp.task 'protractor', ->
   gulp.src [ files.e2e ]
     .pipe(protractor
-      configFile: './protractor.conf.js'
+      configFile: './protractor.conf.coffee'
       args: [
         '--baseUrl'
         'http://localhost:8080'
