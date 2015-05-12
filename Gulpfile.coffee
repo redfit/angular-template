@@ -5,6 +5,7 @@ plumber    = require 'gulp-plumber'
 notify     = require 'gulp-notify'
 open       = require 'gulp-open'
 webserver  = require 'gulp-webserver'
+sourcemaps = require('gulp-sourcemaps')
 protractor = require('gulp-protractor').protractor
 karma      = require('karma').server
 
@@ -23,7 +24,11 @@ errorHandler = ->
 gulp.task 'coffee', ->
   gulp.src files.coffee
     .pipe plumber({errorHandler: errorHandler()})
+    .pipe sourcemaps.init
+      loadMaps: true
     .pipe coffee({bare:false})
+    .pipe sourcemaps.write '.',
+      addComment: true
     .pipe gulp.dest('app/scripts')
 
 gulp.task 'sass', ->
